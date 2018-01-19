@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/mongo-kt/pom.xml" />
+        <option value="$PROJECT_DIR$/mongo-reactive-kt/pom.xml" />
       </list>
     </option>
   </component>

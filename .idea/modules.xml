@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/kt-spring-mongo-master.iml" filepath="$PROJECT_DIR$/kt-spring-mongo-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/mongo-kt/mongo-kt.iml" filepath="$PROJECT_DIR$/mongo-kt/mongo-kt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mongo-reactive-kt/mongo-reactive-kt.iml" filepath="$PROJECT_DIR$/mongo-reactive-kt/mongo-reactive-kt.iml" />
     </modules>
   </component>
 </project>

@@ -4,11 +4,9 @@ import com.park.spring.mongo.kt.mongokt.model.Person
 import com.park.spring.mongo.kt.mongokt.model.PersonRepository
 import com.park.spring.mongo.kt.mongokt.model.Vehicle
 import com.park.spring.mongo.kt.mongokt.model.VehicleRepository
+import org.bson.types.ObjectId
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.PathVariable
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 import java.util.*
 
 @RestController
@@ -20,6 +18,15 @@ class PersonController(@Autowired private var personRepository: PersonRepository
 
     @GetMapping("/{name}")
     fun getUserByName(@PathVariable("name") name: String): Person = personRepository.findByName(name = name)
+
+    @PutMapping
+    fun putUser(@RequestBody person: Person): Person = personRepository.insert(person)
+
+    @PostMapping
+    fun postUser(@RequestBody person: Person): Person = personRepository.save(person)
+
+    @DeleteMapping("/{id}")
+    fun deleteUser(@PathVariable("id") id: ObjectId): String = personRepository.deleteById(id).let { "Delete Id: $id Successful" }
 }
 
 @RestController
