@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mongo-grid-fs-kt" />
         <module name="mongo-kt" />
         <module name="mongo-reactive-kt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mongo-grid-fs-kt" target="1.8" />
       <module name="mongo-kt" target="1.8" />
       <module name="mongo-reactive-kt" target="1.8" />
     </bytecodeTargetLevel>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/kt-spring-mongo-master.iml" filepath="$PROJECT_DIR$/kt-spring-mongo-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mongo-grid-fs-kt/mongo-grid-fs-kt.iml" filepath="$PROJECT_DIR$/mongo-grid-fs-kt/mongo-grid-fs-kt.iml" />
       <module fileurl="file://$PROJECT_DIR$/mongo-kt/mongo-kt.iml" filepath="$PROJECT_DIR$/mongo-kt/mongo-kt.iml" />
       <module fileurl="file://$PROJECT_DIR$/mongo-reactive-kt/mongo-reactive-kt.iml" filepath="$PROJECT_DIR$/mongo-reactive-kt/mongo-reactive-kt.iml" />
     </modules>
